@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@minatojs/driver-*": ["external/minato/packages/*/src"],
+      "@minatojs/*": ["external/minato/packages/*/src"],
+      "undios-*": ["external/undios/packages/*/src"],
+      "cordis-plugin-*": [
+        "external/*/src",
+        "external/*/packages/core/src",
+        "packages/*/src",
+      ],
+      "*": [
+        "external/*/packages/core/src",
+        "external/*/src",
+        "packages/*/src",
+      ],
+    },
+  },
+  "files": [],
+}
