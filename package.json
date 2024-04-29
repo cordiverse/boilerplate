@@ -24,18 +24,20 @@
     "start": "cordis start"
   },
   "devDependencies": {
-    "@types/node": "^20.10.2",
+    "@types/node": "^20.11.30",
     "cross-env": "^7.0.3",
     "esbuild": "^0.18.20",
     "tsx": "^4.7.1",
-    "typescript": "^5.3.2",
-    "yakumo": "^1.0.0-beta.6",
-    "yakumo-esbuild": "^1.0.0-beta.3",
+    "typescript": "^5.4.3",
+    "yakumo": "^1.0.0-beta.13",
+    "yakumo-esbuild": "^1.0.0-beta.5",
     "yakumo-tsc": "^1.0.0-beta.3",
     "yml-register": "^1.2.5"
   },
   "dependencies": {
-    "@cordisjs/plugin-hmr": "^0.1.1",
-    "cordis": "^3.10.4"
+    "@cordisjs/plugin-config": "^2.8.5",
+    "@cordisjs/plugin-hmr": "^0.2.1",
+    "@cordisjs/plugin-insight": "^3.5.1",
+    "cordis": "^3.14.0"
   }
 }

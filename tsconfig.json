@@ -3,14 +3,33 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@minatojs/driver-*": ["external/minato/packages/*/src"],
-      "@minatojs/*": ["external/minato/packages/*/src"],
-      "undios-*": ["external/undios/packages/*/src"],
+      // cordis
+      "@cordisjs/plugin-*": [
+        "external/*/packages/core/src",
+        "external/http/packages/*/src",
+        "external/server/packages/*/src",
+        "external/webui/plugins/*/src",
+      ],
+      "@cordisjs/*/lib": [
+        "external/webui/packages/*/src",
+      ],
+      "@cordisjs/*": [
+        "external/webui/packages/*/src",
+      ],
       "cordis-plugin-*": [
         "external/*/src",
         "external/*/packages/core/src",
         "packages/*/src",
       ],
+
+      // minato
+      "@minatojs/driver-*": ["external/minato/packages/*/src"],
+      "@minatojs/*": ["external/minato/packages/*/src"],
+
+      // satori
+      "@satorijs/adapter-*": ["external/satori/adapters/*/src"],
+      "@satorijs/*": ["external/satori/packages/*/src"],
+
       "*": [
         "external/*/packages/core/src",
         "external/*/src",
