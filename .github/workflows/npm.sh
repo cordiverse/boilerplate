@@ -8,10 +8,9 @@ mv $RUNNER_TEMP/dist dist
 
 cd dist
 
-# modify package.json
-cat package.json | jq '.version="0.0.0"' > package.json.tmp
-mv -f package.json.tmp package.json
+rm -rf node_modules
 
+# do not ignore lockfiles
 sed -i .gitignore \
 -e '/yarn.lock/d'
 
@@ -20,4 +19,4 @@ mv -f package.json.tmp package.json
 
 cd ..
 tar -czf dist.tgz dist
-npm publish dist.tgz --access public --tag latest
+npm publish dist.tgz --access public --tag nightly

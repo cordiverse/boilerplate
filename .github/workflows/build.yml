@@ -1,4 +1,4 @@
-name: Build
+name: build
 
 on:
   release:
@@ -67,8 +67,7 @@ jobs:
         run: bash .github/workflows/prepare.sh
 
       - name: Install dependencies
-        run: |
-          yarn --no-immutable
+        run: yarn --no-immutable
 
       - name: Pack file
         run: bash .github/workflows/pack.sh
