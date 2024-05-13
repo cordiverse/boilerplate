@@ -1,4 +1,4 @@
-name: NPM
+name: npm
 
 on:
   push:
@@ -8,7 +8,6 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    if: ${{ secrets.NPM_TOKEN }}
 
     steps:
       - name: Check out
@@ -21,6 +20,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Publish
+        if: ${{ env.NODE_AUTH_TOKEN }}
         run: bash .github/workflows/publish.sh
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
