@@ -9,20 +9,15 @@ mv $RUNNER_TEMP/dist dist
 cd dist
 
 # modify package.json
-cat package.json | jq '.version="0.0.0" | del(.optionalDependencies)' > package.json.tmp
+cat package.json | jq '.version="0.0.0"' > package.json.tmp
 mv -f package.json.tmp package.json
 
 sed -i .gitignore \
 -e '/yarn.lock/d'
 
-# modify workflows
-cd .github/workflows
-rm publish.sh
-rm sync.sh
-rm sync.yml
+cat package.json | jq ".version=\"0.0.0-$GITHUB_SHA\" | .private=false" > package.json.tmp
+mv -f package.json.tmp package.json
 
-sed -i tag.yml \
--e 's/develop/master/g'
-
-sed -i build.yml \
--e 's/develop/master/g'
+cd ..
+tar -czf dist.tgz dist
+npm publish dist.tgz --access public --tag latest

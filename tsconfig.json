@@ -26,10 +26,6 @@
       "@minatojs/driver-*": ["external/minato/packages/*/src"],
       "@minatojs/*": ["external/minato/packages/*/src"],
 
-      // satori
-      "@satorijs/adapter-*": ["external/satori/adapters/*/src"],
-      "@satorijs/*": ["external/satori/packages/*/src"],
-
       "*": [
         "external/*/packages/core/src",
         "external/*/src",
