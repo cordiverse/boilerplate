@@ -28,7 +28,7 @@ jobs:
 
       - name: Create release
         if: ${{ steps.version.outputs.tag }}
-        run: gh release create ${{ steps.version.outputs.tag }}
+        run: gh release create ${{ steps.version.outputs.tag }} --title ${{ steps.version.outputs.tag }}
 
       - name: Build
         run: gh workflow run build --ref ${{ steps.version.outputs.tag }}
