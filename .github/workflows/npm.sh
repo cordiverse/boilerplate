@@ -21,6 +21,8 @@ rm -rf node_modules
 sed -i .gitignore \
 -e '/yarn.lock/d'
 
+NAME=$(cat package.json | jq -r ".name")
+
 # if $GITHUB_REF is in the form of refs/tags/v* then it's a release
 if [[ $GITHUB_REF == refs/tags/v* ]]; then
   cat package.json | jq ".private=false" > package.json.tmp
@@ -38,5 +40,4 @@ else
 fi
 
 # sync npmmirror
-NAME=$(cat package.json | jq -r ".name")
 curl -X PUT https://registry-direct.npmmirror.com/$NAME/sync?sync_upstream=true
