@@ -8,7 +8,7 @@ cd .yarn
 mkdir $RUNNER_TEMP/dist/.yarn
 cp -a patches $RUNNER_TEMP/dist/.yarn
 cp -a plugins $RUNNER_TEMP/dist/.yarn
-cp -a releases $RUNNER_TEMP/dist/.yarn
+# cp -a releases $RUNNER_TEMP/dist/.yarn
 cp -a sdks $RUNNER_TEMP/dist/.yarn
 cp -a versions $RUNNER_TEMP/dist/.yarn
 
@@ -36,3 +36,7 @@ else
   tar -czf dist.tgz dist
   npm publish dist.tgz --access public --tag nightly
 fi
+
+# sync npmmirror
+NAME=$(cat package.json | jq -r ".name")
+curl -X PUT https://registry-direct.npmmirror.com/$NAME/sync?sync_upstream=true
