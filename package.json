@@ -1,6 +1,6 @@
 {
   "name": "@cordiverse/boilerplate",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "private": true,
   "files": [
     ".env",
@@ -23,6 +23,7 @@
     "start": "cordis start"
   },
   "devDependencies": {
+    "@cordisjs/client": "^0.1.12",
     "@types/node": "^22.1.0",
     "cross-env": "^7.0.3",
     "esbuild": "^0.23.0",
