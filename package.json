@@ -1,6 +1,6 @@
 {
   "name": "@cordiverse/boilerplate",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "private": true,
   "files": [
     ".env",
@@ -23,24 +23,24 @@
     "start": "cordis start"
   },
   "devDependencies": {
-    "@cordisjs/client": "^0.1.12",
-    "@types/node": "^22.1.0",
+    "@cordisjs/client": "^0.2.0",
+    "@types/node": "^22.13.9",
     "cross-env": "^7.0.3",
-    "esbuild": "^0.23.0",
-    "tsx": "^4.16.2",
-    "typescript": "^5.5.3",
-    "yakumo": "^1.0.0-beta.17",
-    "yakumo-esbuild": "^1.0.0-beta.6",
-    "yakumo-tsc": "^1.0.0-beta.4",
+    "esbuild": "^0.25.0",
+    "tsx": "npm:@cordiverse/tsx@4.19.3-fix.1",
+    "typescript": "^5.8.2",
+    "yakumo": "^2.0.0-alpha.1",
+    "yakumo-esbuild": "^2.0.0-alpha.0",
+    "yakumo-tsc": "^2.0.0-alpha.1",
     "yml-register": "^1.2.5"
   },
   "dependencies": {
-    "@cordisjs/plugin-hmr": "^0.2.5",
-    "@cordisjs/plugin-insight": "^3.5.4",
-    "@cordisjs/plugin-manager": "^0.3.1",
-    "@cordisjs/plugin-notifier": "^0.1.4",
-    "@cordisjs/plugin-server": "^0.2.3",
-    "@cordisjs/plugin-webui": "^0.1.12",
-    "cordis": "^3.17.9"
+    "@cordisjs/plugin-hmr": "^0.2.6",
+    "@cordisjs/plugin-insight": "^4.0.0",
+    "@cordisjs/plugin-manager": "^0.4.0",
+    "@cordisjs/plugin-notifier": "^0.2.0",
+    "@cordisjs/plugin-server": "^1.0.0-alpha.0",
+    "@cordisjs/plugin-webui": "^0.2.0",
+    "cordis": "^4.0.0-alpha.2"
   }
 }
