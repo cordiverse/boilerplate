@@ -1,6 +1,6 @@
 {
   "name": "@cordiverse/boilerplate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "files": [
     ".env",
@@ -23,7 +23,7 @@
     "start": "cordis start"
   },
   "devDependencies": {
-    "@cordisjs/client": "^0.2.1",
+    "@cordisjs/client": "^0.2.2",
     "@types/node": "^22.13.9",
     "cross-env": "^7.0.3",
     "esbuild": "^0.25.0",
@@ -35,12 +35,12 @@
     "yml-register": "^1.2.5"
   },
   "dependencies": {
-    "@cordisjs/plugin-hmr": "^1.0.0-alpha.1",
-    "@cordisjs/plugin-insight": "^4.0.0",
-    "@cordisjs/plugin-manager": "^0.4.0",
-    "@cordisjs/plugin-notifier": "^0.2.0",
-    "@cordisjs/plugin-server": "^1.0.0",
-    "@cordisjs/plugin-webui": "^0.2.1",
-    "cordis": "^4.0.0-alpha.5"
+    "@cordisjs/plugin-hmr": "^1.0.0",
+    "@cordisjs/plugin-insight": "^4.0.1",
+    "@cordisjs/plugin-manager": "^0.4.1",
+    "@cordisjs/plugin-notifier": "^0.2.1",
+    "@cordisjs/plugin-server": "^1.0.2",
+    "@cordisjs/plugin-webui": "^0.2.2",
+    "cordis": "^4.0.0-alpha.6"
   }
 }
