@@ -1,10 +1,15 @@
+- id: sc426a
+  name: '@cordisjs/plugin-timer'
+- id: f46sab
+  name: '@cordisjs/plugin-http'
+- id: ikxxis
+  name: '@cordisjs/plugin-http-socks'
 - id: znqu9d
   name: '@cordisjs/plugin-server'
   config:
     port: 6140
-- id: 0txz1f
-  name: '@cordisjs/plugin-hmr'
 - id: 1n9z0q
+  label: WebUI
   name: cordis/group
   config:
     - id: xh7rpr
@@ -15,3 +20,11 @@
       name: '@cordisjs/plugin-manager'
     - id: 4cj730
       name: '@cordisjs/plugin-notifier'
+    - id: 53uope
+      name: '@cordisjs/plugin-logger-webui'
+- id: biv21g
+  label: Development
+  name: cordis/group
+  config:
+    - id: 0txz1f
+      name: '@cordisjs/plugin-hmr'
