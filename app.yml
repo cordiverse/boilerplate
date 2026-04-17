@@ -1,0 +1,30 @@
+- id: 312edd83
+  name: '@cordisjs/plugin-timer'
+- id: 0a9ec786
+  name: '@cordisjs/plugin-http'
+- id: 4cd8d0ee
+  name: '@cordisjs/plugin-http-socks'
+- id: fa2b056a
+  name: '@cordisjs/plugin-server'
+  config:
+    port: 3140
+- id: 0c9db8e2
+  label: WebUI
+  name: '@cordisjs/plugin-group'
+  config:
+    - id: 4430a808
+      name: '@cordisjs/plugin-webui'
+    - id: 8a9b6184
+      name: '@cordisjs/plugin-insight'
+    - id: ks2osk
+      name: '@cordisjs/plugin-loader-webui'
+    - id: 539bc93a
+      name: '@cordisjs/plugin-notifier'
+    - id: 7adac547
+      name: '@cordisjs/plugin-logger-webui'
+- id: 375b963c
+  label: Development
+  name: '@cordisjs/plugin-group'
+  config:
+    - id: e1e36558
+      name: '@cordisjs/plugin-hmr'

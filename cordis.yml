@@ -1,30 +1,11 @@
-- id: sc426a
-  name: '@cordisjs/plugin-timer'
-- id: f46sab
-  name: '@cordisjs/plugin-http'
-- id: ikxxis
-  name: '@cordisjs/plugin-http-socks'
-- id: znqu9d
-  name: '@cordisjs/plugin-server'
+- name: '@cordisjs/plugin-cli'
   config:
-    port: 3140
-- id: 1n9z0q
-  label: WebUI
-  name: cordis/group
+    name: cordis
+- name: '@cordisjs/plugin-cli-cordis'
   config:
-    - id: xh7rpr
-      name: '@cordisjs/plugin-webui'
-    - id: el17rl
-      name: '@cordisjs/plugin-insight'
-    - id: ks2osk
-      name: '@cordisjs/plugin-manager'
-    - id: 4cj730
-      name: '@cordisjs/plugin-notifier'
-    - id: 53uope
-      name: '@cordisjs/plugin-logger-webui'
-- id: biv21g
-  label: Development
-  name: cordis/group
-  config:
-    - id: 0txz1f
-      name: '@cordisjs/plugin-hmr'
+    path: ./app.yml
+    daemon:
+      enabled: true
+    prelude:
+      - name: '@cordisjs/plugin-logger'
+      - name: '@cordisjs/plugin-env'
