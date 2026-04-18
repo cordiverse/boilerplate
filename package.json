@@ -1,6 +1,6 @@
 {
   "name": "@cordisjs/boilerplate",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "private": true,
   "files": [
     ".env",
@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "build": "yakumo build",
-    "dev": "cross-env NODE_ENV=development cordis run --import tsx --import yml-register",
+    "dev": "cross-env NODE_ENV=development NODE_OPTIONS=\"--import tsx --import yml-register\" cordis run",
     "start": "cordis run"
   },
   "devDependencies": {
@@ -26,20 +26,20 @@
     "esbuild": "^0.28.0",
     "tsx": "npm:@cordiverse/tsx@4.19.3-fix.3",
     "typescript": "^5.9.3",
-    "yakumo": "^3.1.0",
+    "yakumo": "^3.1.1",
     "yakumo-esbuild": "^3.0.1",
     "yakumo-tsc": "^3.0.1",
     "yml-register": "^1.2.5"
   },
   "dependencies": {
     "@cordisjs/plugin-cli": "^1.1.0",
-    "@cordisjs/plugin-cli-cordis": "^1.0.3",
+    "@cordisjs/plugin-cli-cordis": "^1.0.4",
     "@cordisjs/plugin-env": "^1.0.1",
     "@cordisjs/plugin-group": "^1.0.0",
     "@cordisjs/plugin-hmr": "^1.0.10",
     "@cordisjs/plugin-http": "^1.3.0",
     "@cordisjs/plugin-http-socks": "^1.0.0",
-    "@cordisjs/plugin-include": "^1.0.2",
+    "@cordisjs/plugin-include": "^1.0.3",
     "@cordisjs/plugin-insight": "^4.1.1",
     "@cordisjs/plugin-loader-webui": "^0.6.0",
     "@cordisjs/plugin-logger": "^1.0.2",
