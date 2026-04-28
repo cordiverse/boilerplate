@@ -5,4 +5,12 @@
   ],
   "git.repositoryScanMaxDepth": 10,
   "git.autoRepositoryDetection": "subFolders",
+  "cSpell.words": [
+    "cordis",
+    "cordisjs",
+    "cordiverse",
+    "webui",
+    "unyaml",
+    "yakumo"
+  ],
 }
