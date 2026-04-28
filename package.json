@@ -2,6 +2,7 @@
   "name": "@cordisjs/boilerplate",
   "version": "0.5.1",
   "private": true,
+  "packageManager": "yarn@4.14.1",
   "files": [
     ".env",
     "cordis.yml"
