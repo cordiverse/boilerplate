@@ -18,7 +18,15 @@ if [ "$VERSION" = "$PM" ]; then
   echo "unsupported packageManager: $PM (only \"yarn@<version>\" is supported)" >&2
   exit 1
 fi
-corepack enable
+# corepack `enable` writes shims next to its own binary by default; on arm64 + nix
+# that path is in the read-only /nix/store. Redirect to a writable bin dir.
+COREPACK_DIR="$HOME/.local/bin"
+mkdir -p "$COREPACK_DIR"
+corepack enable --install-directory "$COREPACK_DIR"
+export PATH="$COREPACK_DIR:$PATH"
+if [ -n "$GITHUB_PATH" ]; then
+  echo "$COREPACK_DIR" >> "$GITHUB_PATH"
+fi
 yarn set version --yarn-path "$VERSION"
 
 # remove development-related fields and the packageManager field
