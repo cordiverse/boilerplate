@@ -13,19 +13,19 @@
   name: '@cordisjs/plugin-group'
   config:
     - id: 5b69b05e
-      name: 'minato'
+      name: '@cordisjs/plugin-database'
     - id: 07c0d352
-      name: '@minatojs/driver-sqlite'
+      name: '@cordisjs/plugin-database-sqlite'
       config:
         path: ./data/cordis.db
     - id: 0cb55d6c
-      name: '@minatojs/driver-mysql'
+      name: '@cordisjs/plugin-database-mysql'
       disabled: true
     - id: ae5ffd0d
-      name: '@minatojs/driver-postgres'
+      name: '@cordisjs/plugin-database-postgres'
       disabled: true
     - id: 5c1993ac
-      name: '@minatojs/driver-mongo'
+      name: '@cordisjs/plugin-database-mongo'
       disabled: true
 - id: 0c9db8e2
   label: WebUI
@@ -33,14 +33,22 @@
   config:
     - id: 4430a808
       name: '@cordisjs/plugin-webui'
+    - id: f64a9366
+      name: '@cordisjs/plugin-database-webui'
+    - id: 03ebc689
+      name: '@cordisjs/plugin-http-webui'
     - id: 8a9b6184
       name: '@cordisjs/plugin-insight'
-    - id: ks2osk
+    - id: 7c7aff7a
       name: '@cordisjs/plugin-loader-webui'
+    - id: afe4937f
+      name: '@cordisjs/plugin-market-webui'
     - id: 539bc93a
       name: '@cordisjs/plugin-notifier'
     - id: 7adac547
       name: '@cordisjs/plugin-logger-webui'
+    - id: 126b4c42
+      name: '@cordisjs/plugin-server-webui'
 - id: 375b963c
   label: Development
   name: '@cordisjs/plugin-group'

@@ -3,6 +3,7 @@
   "compilerOptions": {
     "paths": {
       // cordis
+      "@cordisjs/plugin-database-*": ["./external/database/packages/*/src"],
       "@cordisjs/plugin-*": [
         "./external/*/packages/core/src",
         "./external/http/packages/*/src",
@@ -12,7 +13,9 @@
       "@cordisjs/*/lib": [
         "./external/webui/packages/*/src",
       ],
+      "@cordisjs/database-*": ["./external/database/packages/*/src"],
       "@cordisjs/*": [
+        "./external/database/packages/*/src",
         "./external/webui/packages/*/src",
       ],
       "cordis-plugin-*": [
@@ -20,10 +23,6 @@
         "./external/*/packages/core/src",
         "./packages/*/src",
       ],
-
-      // minato
-      "@minatojs/driver-*": ["./external/minato/packages/*/src"],
-      "@minatojs/*": ["./external/minato/packages/*/src"],
 
       "*": [
         "./external/*/packages/core/src",
