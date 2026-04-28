@@ -1,6 +1,6 @@
 {
   "name": "@cordisjs/boilerplate",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "private": true,
   "files": [
     ".env",
@@ -27,7 +27,7 @@
     "tsx": "npm:@cordiverse/tsx@4.19.3-fix.3",
     "typescript": "^5.9.3",
     "yakumo": "^3.1.1",
-    "yakumo-esbuild": "^3.0.1",
+    "yakumo-esbuild": "^3.0.2",
     "yakumo-tsc": "^3.0.1",
     "yml-register": "^1.2.5"
   },
@@ -35,7 +35,7 @@
     "@cordisjs/plugin-cli": "^1.1.0",
     "@cordisjs/plugin-cli-cordis": "^1.0.4",
     "@cordisjs/plugin-database": "^4.0.1",
-    "@cordisjs/plugin-database-sqlite": "^5.0.3",
+    "@cordisjs/plugin-database-sqlite": "^5.0.4",
     "@cordisjs/plugin-database-webui": "^0.2.0",
     "@cordisjs/plugin-env": "^1.0.1",
     "@cordisjs/plugin-group": "^1.0.0",

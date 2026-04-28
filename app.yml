@@ -41,12 +41,12 @@
       name: '@cordisjs/plugin-insight'
     - id: 7c7aff7a
       name: '@cordisjs/plugin-loader-webui'
-    - id: afe4937f
-      name: '@cordisjs/plugin-market-webui'
-    - id: 539bc93a
-      name: '@cordisjs/plugin-notifier'
     - id: 7adac547
       name: '@cordisjs/plugin-logger-webui'
+    - id: afe4937f
+      name: '@cordisjs/plugin-market'
+    - id: 539bc93a
+      name: '@cordisjs/plugin-notifier'
     - id: 126b4c42
       name: '@cordisjs/plugin-server-webui'
 - id: 375b963c
