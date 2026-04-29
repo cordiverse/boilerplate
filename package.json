@@ -1,6 +1,6 @@
 {
   "name": "@cordisjs/boilerplate",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "private": true,
   "packageManager": "yarn@4.14.1",
   "files": [
@@ -17,11 +17,12 @@
   ],
   "scripts": {
     "build": "yakumo build",
-    "dev": "cross-env NODE_ENV=development NODE_OPTIONS=\"--import tsx --import yml-register\" cordis run",
+    "dev": "cross-env NODE_ENV=development NODE_OPTIONS=\"--import tsx --import @cordisjs/unyaml\" cordis run",
     "start": "cordis run"
   },
   "devDependencies": {
-    "@cordisjs/client": "^0.5.1",
+    "@cordisjs/client": "^0.5.2",
+    "@cordisjs/unyaml": "^2.0.3",
     "@types/node": "^25.3.5",
     "cross-env": "^10.1.0",
     "esbuild": "^0.28.0",
@@ -29,8 +30,7 @@
     "typescript": "^5.9.3",
     "yakumo": "^3.1.1",
     "yakumo-esbuild": "^3.0.2",
-    "yakumo-tsc": "^3.0.1",
-    "yml-register": "^1.2.5"
+    "yakumo-tsc": "^3.0.1"
   },
   "dependencies": {
     "@cordisjs/plugin-cli": "^1.1.0",
@@ -54,7 +54,7 @@
     "@cordisjs/plugin-server": "^1.5.0",
     "@cordisjs/plugin-server-webui": "^0.2.0",
     "@cordisjs/plugin-timer": "^1.1.1",
-    "@cordisjs/plugin-webui": "^0.5.1",
+    "@cordisjs/plugin-webui": "^0.5.2",
     "cordis": "^4.0.0-rc.4"
   }
 }

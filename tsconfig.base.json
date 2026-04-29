@@ -9,8 +9,8 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "types": [
-      "@types/node",
-      "yml-register/types",
+      "node",
+      "@cordisjs/unyaml/types",
     ],
   }
 }
