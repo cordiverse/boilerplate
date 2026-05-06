@@ -27,6 +27,21 @@
     - id: 5c1993ac
       name: '@cordisjs/plugin-database-mongo'
       disabled: true
+- id: 7bf6f701
+  name: '@cordisjs/plugin-group'
+  label: SSO
+  config:
+    - id: ee017963
+      name: '@cordisjs/plugin-sso'
+    - id: 8d3a0f12
+      name: '@cordisjs/plugin-sso-server'
+    - id: 45bc2d91
+      name: '@cordisjs/plugin-sso-password'
+    - id: 03dd4465
+      name: '@cordisjs/plugin-sso-webauthn'
+    - id: dcff0bd1
+      name: '@cordisjs/plugin-sso-oauth'
+      disabled: true
 - id: 0c9db8e2
   label: WebUI
   name: '@cordisjs/plugin-group'
@@ -49,6 +64,8 @@
       name: '@cordisjs/plugin-notifier'
     - id: 126b4c42
       name: '@cordisjs/plugin-server-webui'
+    - id: f9c1a8b2
+      name: '@cordisjs/plugin-webui-sso'
 - id: 375b963c
   label: Development
   name: '@cordisjs/plugin-group'
