@@ -39,6 +39,7 @@
       name: '@cordisjs/plugin-sso-password'
     - id: 03dd4465
       name: '@cordisjs/plugin-sso-webauthn'
+      disabled: true
     - id: dcff0bd1
       name: '@cordisjs/plugin-sso-oauth'
       disabled: true
