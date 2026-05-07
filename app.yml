@@ -73,3 +73,8 @@
   config:
     - id: e1e36558
       name: '@cordisjs/plugin-hmr'
+      config:
+        root:
+          - external
+          - packages
+          - app.yml
