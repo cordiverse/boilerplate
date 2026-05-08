@@ -8,6 +8,8 @@
   name: '@cordisjs/plugin-server'
   config:
     port: 3140
+- id: aa143c36
+  name: '@cordisjs/plugin-server-acl'
 - id: 8357f09b
   label: Database
   name: '@cordisjs/plugin-group'
