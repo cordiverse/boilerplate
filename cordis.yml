@@ -7,5 +7,5 @@
     daemon:
       enabled: true
     prelude:
-      - name: '@cordisjs/plugin-logger'
       - name: '@cordisjs/plugin-env'
+      - name: '@cordisjs/plugin-logger-console'
