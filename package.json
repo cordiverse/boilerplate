@@ -1,6 +1,6 @@
 {
   "name": "@cordisjs/boilerplate",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "private": true,
   "packageManager": "yarn@4.14.1",
   "files": [
@@ -22,7 +22,7 @@
     "start": "cordis run"
   },
   "devDependencies": {
-    "@cordisjs/client": "^0.8.1",
+    "@cordisjs/client": "^0.8.2",
     "@cordisjs/unyaml": "^2.0.3",
     "@types/node": "^25.3.5",
     "cross-env": "^10.1.0",
@@ -36,8 +36,8 @@
   "dependencies": {
     "@cordisjs/plugin-cli": "^1.1.2",
     "@cordisjs/plugin-cli-cordis": "^1.0.5",
-    "@cordisjs/plugin-database": "^4.0.2",
-    "@cordisjs/plugin-database-sqlite": "^5.0.5",
+    "@cordisjs/plugin-database": "^4.1.1",
+    "@cordisjs/plugin-database-sqlite": "^5.1.1",
     "@cordisjs/plugin-database-webui": "^0.5.0",
     "@cordisjs/plugin-env": "^1.0.1",
     "@cordisjs/plugin-group": "^1.0.0",
@@ -47,22 +47,22 @@
     "@cordisjs/plugin-http-webui": "^0.5.0",
     "@cordisjs/plugin-include": "^1.0.4",
     "@cordisjs/plugin-insight": "^4.5.1",
-    "@cordisjs/plugin-loader": "^1.0.0-rc.4",
+    "@cordisjs/plugin-loader": "^1.0.0-rc.5",
     "@cordisjs/plugin-loader-webui": "^0.10.1",
     "@cordisjs/plugin-logger-console": "^1.0.0",
     "@cordisjs/plugin-logger-webui": "^0.6.1",
     "@cordisjs/plugin-market": "^0.5.1",
     "@cordisjs/plugin-notifier": "^0.8.0",
-    "@cordisjs/plugin-server": "^1.6.2",
+    "@cordisjs/plugin-server": "^1.7.0",
     "@cordisjs/plugin-server-acl": "^1.0.1",
     "@cordisjs/plugin-server-webui": "^0.5.0",
-    "@cordisjs/plugin-sso": "^0.2.2",
+    "@cordisjs/plugin-sso": "^0.2.3",
     "@cordisjs/plugin-sso-oauth": "^0.2.3",
     "@cordisjs/plugin-sso-password": "^0.2.2",
     "@cordisjs/plugin-sso-server": "^0.2.2",
     "@cordisjs/plugin-timer": "^1.1.2",
-    "@cordisjs/plugin-webui": "^0.8.1",
+    "@cordisjs/plugin-webui": "^0.8.2",
     "@cordisjs/plugin-webui-sso": "^0.2.6",
-    "cordis": "^4.0.0-rc.5"
+    "cordis": "^4.0.0-rc.7"
   }
 }
